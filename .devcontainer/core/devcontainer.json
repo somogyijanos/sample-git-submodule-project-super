@@ -1,0 +1,17 @@
+{
+    "name": "core",
+    "dockerComposeFile": [
+        "../../docker-compose.yml"
+    ],
+    "service": "core",
+    "workspaceFolder": "/sample-git-submodule-project-super",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "mhutchie.git-graph"
+            ]
+        }
+    }
+}

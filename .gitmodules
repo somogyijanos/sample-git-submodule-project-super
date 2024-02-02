@@ -1,0 +1,3 @@
+[submodule "modules/mymodule"]
+	path = modules/mymodule
+	url = https://github.com/somogyijanos/sample-git-submodule-project-mymodule.git

@@ -1,0 +1,18 @@
+services:
+    core:
+        build:
+            dockerfile: .devcontainer/core/Dockerfile
+        working_dir: &workspacefolder /sample-git-submodule-project-super
+        volumes: &workspace
+            - type: bind
+              source: .
+              target: *workspacefolder
+        stdin_open: true
+        tty: true
+
+    mymodule:
+        extends:
+            file: modules/mymodule/docker-compose.yml
+            service: dev
+        working_dir: *workspacefolder
+        volumes: *workspace
